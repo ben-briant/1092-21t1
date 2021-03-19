@@ -17,7 +17,7 @@ int main (void) {
 
 void print_dir_info(char *dir_name) {
 
-    DIR *d = opendir(".");
+    DIR *d = opendir(dir_name);
     if (d == NULL) {
         perror("opendir");
         exit(1);
